@@ -57,7 +57,16 @@ function showNameInput() {
                     class="button-pulse w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition duration-150 shadow-md shadow-green-900/50">
                 Start Game
             </button>
-            
+            <div class="text-sm text-gray-400 mt-4">
+                <h3 class="font-semibold text-white mb-2">Rules:</h3>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>Enter a number from 1-100.</li>
+                    <li>If too low, enter a bigger number.</li>
+                    <li>If too high, enter a smaller number.</li>
+                </ul>
+            </div>
+        </div>
+    `;
     document.getElementById('name-input').focus();
 }
 
@@ -90,7 +99,7 @@ function initGame(isReset = false) {
     if (isReset) {
         displayMessage(`A new secret number is set! HEY ${playerName.toUpperCase()}! Enter your first guess.`);
     } else {
-        displayMessage(`HEY ${playerName.toUpperCase()}! welcome TO ~> GUESS THE SECRET NUMBER. Enter a number from 1-100.`);
+        displayMessage(`HEY ${playerName.toUpperCase()}! welcome back TO ~> GUESS THE SECRET NUMBER v2.0. Enter a number from 1-100.`);
     }
 
     newGameBtn.classList.add('hidden');
@@ -174,5 +183,3 @@ function handleGuess() {
 
 // --- Start Application on Window Load ---
 window.onload = initializeDom;
-
-
