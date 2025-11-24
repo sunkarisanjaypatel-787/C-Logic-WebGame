@@ -1,0 +1,36 @@
+/* Custom Styling for Guessing Game */
+
+/* Custom font and smooth transition for better feel */
+body {
+    transition: background-color 0.5s ease;
+}
+
+/* Card styling with shadow and subtle lift on hover */
+.game-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.game-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Button pulse effect for better interaction feedback */
+.button-pulse {
+    transition: all 0.2s;
+}
+.button-pulse:hover {
+    transform: scale(1.02);
+}
+.button-pulse:active {
+    transform: scale(0.98);
+}
+
+/* Custom animation for results feedback box */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.message-fade {
+    animation: fadeIn 0.5s ease-out;
+}

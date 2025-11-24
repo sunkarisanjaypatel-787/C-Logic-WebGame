@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Secret Number v2.0</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensures the custom font is used */
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Game Container -->
+    <div id="game-container" class="game-card bg-gray-800 p-8 md:p-12 w-full max-w-lg rounded-3xl space-y-8 border-t-4 border-purple-500">
+        <h1 class="text-4xl font-extrabold text-center text-purple-400 select-none">
+            GUESS THE SECRET NUMBER
+        </h1>
+        <p class="text-center text-sm font-light text-gray-400 select-none">
+            v2.0 - Find the number between 1 and 100!
+        </p>
+
+        <!-- Dynamic Content Area (Name Input or Game Interface) -->
+        <div id="dynamic-content">
+            <!-- Content will be injected by script.js -->
+        </div>
+
+        <!-- Message/Feedback Area -->
+        <div id="message-box" class="min-h-[6rem] bg-gray-700 p-4 rounded-xl text-center text-lg font-semibold border border-gray-600 flex items-center justify-center message-fade">
+            Enter your name to start the game!
+        </div>
+
+        <!-- Game Control Buttons -->
+        <div id="control-panel" class="flex justify-center pt-4">
+            <button id="new-game-btn" onclick="initGame(true)" class="hidden button-pulse bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-150 shadow-lg shadow-purple-900/50">
+                Start New Game
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
