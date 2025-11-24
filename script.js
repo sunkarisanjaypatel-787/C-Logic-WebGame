@@ -99,7 +99,7 @@ function initGame(isReset = false) {
     if (isReset) {
         displayMessage(`A new secret number is set! HEY ${playerName.toUpperCase()}! Enter your first guess.`);
     } else {
-        displayMessage(`HEY ${playerName.toUpperCase()}! welcome back TO ~> GUESS THE SECRET NUMBER v2.0. Enter a number from 1-100.`);
+        displayMessage(`HEY ${playerName.toUpperCase()}! welcome TO ~> GUESS THE SECRET NUMBER. Enter a number from 1-100.`);
     }
 
     newGameBtn.classList.add('hidden');
@@ -183,3 +183,4 @@ function handleGuess() {
 
 // --- Start Application on Window Load ---
 window.onload = initializeDom;
+
