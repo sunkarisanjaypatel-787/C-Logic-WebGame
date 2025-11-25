@@ -18,6 +18,6 @@ Logic Portability: Demonstrates proficiency in abstracting core algorithms from 
 
 This application is ready to run directly in any modern web browser.
 
-1. Live Demo: [https://sunkarisanjaypatel-787.github.io/C-Logic-WebGame/]
+1. Live Demo: [ https://sunkarisanjaypatel-787.github.io/C-Logic-WebGame/ ]
 
 2. Clone Repository: git clone [ https://github.com/sunkarisanjaypatel-787/C-Logic-WebGame ]
